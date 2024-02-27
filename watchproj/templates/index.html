@@ -83,35 +83,84 @@
         <span class="visually-hidden">Next</span>
     </button>
 </div>
- <!-- <div class="container-fluid">
-    <h1 class="hed mt-5 mb-2 text-center">All Products</h1>
-    <div class="row row-cols-1 row-cols-md-4 g-4">
-        {% for product in products %}
-        <div class="col">
-            <div class="card border-0 p-3 rounded-0 mb-4" style="background-color: #e2edf75d;">
-                <a href="{% url 'shop:details' product.id %}">
-                    <div class="image-container" style="background-color: #e2edf7; padding: 20px;">
-                        <img src="{{ product.image.url }}" class="card-img-top rounded" alt="{{ product.name }}">
-                    </div>
-                </a>
-                <div class="card-body">
-                    <h5 class="card-title">{{ product.name }}</h5>
-                    <p class="card-text">${{ product.price }}</p>
-                    <p class="card-text">{{ product.category }}</p>
-                </div>
-            </div>
+
+<div class="container" style="text-decoration-line: underline;">
+  <h2>This Just In</h2>
+</div>
+ 
+
+
+
+
+<div id="carouselExampleControlsNoTouching " class="carousel slide" data-bs-touch="false" style="max-width: 560px; margin-left: 30%;">
+    <div class="carousel-inner mt-4">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col">
+            <img src="../static/images/A1.jpg" class="d-block mx-auto" style="max-width: 100%; height: auto;" alt="...">
+          </div>
+          <div class="col">
+            <img src="../static/images/A2.jpg" class="d-block mx-auto" style="max-width: 100%; height: auto;" alt="...">
+          </div>
+          <div class="col">
+            <img src="../static/images/TT3.jpg" class="d-block mx-auto" style="max-width: 100%; height: auto;" alt="...">
+          </div>
+          <div class="col">
+            <img src="../static/images/TT4.jpg" class="d-block mx-auto" style="max-width: 100%; height: auto;" alt="...">
+          </div>
+          
         </div>
-        {% endfor %}
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <img src="../static/images/image.jpg" class="d-block mx-auto" style="max-width: 100%; height: auto;" alt="...">
+          </div>
+          <div class="col">
+            <img src="../static/images/image.jpg" class="d-block mx-auto" style="max-width: 100%; height: auto;" alt="...">
+          </div>
+          <div class="col">
+            <img src="../static/images/image.jpg" class="d-block mx-auto" style="max-width: 100%; height: auto;" alt="...">
+          </div>
+          
+          
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <img src="../static/images/image.jpg" class="d-block mx-auto" style="max-width: 100%; height: auto;" alt="...">
+          </div>
+          <div class="col">
+            <img src="../static/images/image.jpg" class="d-block mx-auto" style="max-width: 100%; height: auto;" alt="...">
+          </div>
+          <div class="col">
+            <img src="../static/images/image.jpg" class="d-block mx-auto" style="max-width: 100%; height: auto;" alt="...">
+          </div>
+        </div>
+      </div>
     </div>
-</div> -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+
+
 {% endif %}
 
   
 
-  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        <div class="kk carousel-item active" data-bs-interval="10000">
-            <img src="../static/images/kk.png" class="d-block w-100" style="height: 400px;" alt="...">
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel mb-4 ">
+    <div class="carousel-inner mt-4">
+        <div class="kk carousel-item active mb-4" data-bs-interval="10000">
+            <img src="../static/images/kk.png" class="d-block w-100 " style="height: 400px; " alt="...">
         </div>
     </div>
   </div>
@@ -157,6 +206,9 @@
       </div>
     </div>
   </div>
+
+  
+
   
 
   {% endblock%}
